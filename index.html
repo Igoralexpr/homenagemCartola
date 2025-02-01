@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tributo ao Cartola</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navegation">
+        <ul class="navegation-bar">
+          <li>
+            <a class="navegation-bar-link" href="./index.html">Home</a>
+          </li>
+          <li>
+            <a class="navegation-bar-link" href="./bibliography.html"
+              >Bibliografia</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- Conteúdo Principal -->
+      <section class="principal">
+        <h1 class="principal-tittle">
+          Cartola: Entre Rosas e Moinhos, a Essência do Samba
+        </h1>
+        <img
+          class="principal-image"
+          src="./img/cartola.jpg"
+          alt="Imagem do Cartola"
+        />
+      </section>
+      <hr />
+      <!-- Conteúdo Secundário (Texto) -->
+      <section class="container">
+        <h2 class="container-tittle">Cartola, no moinho do mundo</h2>
+        <div id="container-text">
+          <script>
+            fetch("textoprincipal.txt")
+              .then((Response) => Response.text())
+              .then((data) => {
+                document.getElementById("container-text").innerText = data;
+              });
+          </script>
+        </div>
+        <cite class="citacao">Por Carlos Drummond de Andrade</cite>
+      </section>
+
+      <!-- Conteúdo Terciário (Músicas) -->
+      <section id="principais-musicas">
+        <h2 class="principais-musicas-tittle">
+          Principais músicas do Cartola:
+        </h2>
+        <cite
+          >Fonte:
+          <a
+            href="https://www.terra.com.br/diversao/musica/115-anos-de-cartola-confira-as-10-musicas-mais-ouvidas-do-artista,e6ec7533e39f28a193d87608090561c9okouemc7.html"
+            >Terra</a
+          ></cite
+        >
+        <ul class="principais-musicas-list">
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=mFh6u4GvR3g"
+              target="_blank"
+              >As Rosas Não Falam</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=UJIm5nT_L9A"
+              target="_blank"
+              >O Mundo é um Moinho</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >O sol nascerá</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >Alvorada</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >Tive sim</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >Corra e olhe o céu</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >Acontece</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >Sala de recepção</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >Disfarça e chora</a
+            >
+          </li>
+          <li>
+            <a
+              class="principais-musicas-links"
+              href="https://www.youtube.com/watch?v=Gpfc7Jmo8no"
+              target="_blank"
+              >Amor proibido</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <p>© 2025 Tributo a Cartola | Desenvolvido por Igor</p>
+    </footer>
+  </body>
+</html>
