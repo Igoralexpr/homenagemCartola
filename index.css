@@ -45,43 +45,82 @@ body {
   color: #ffd700;
   transition: 0.4s;
 }
-#principal {
+.principal {
   justify-content: center;
   background-color: var(--back-color);
   color: var(--text-color);
+  border: 0.1rem solid #ffd700;
+  border-radius: 1rem;
   margin: 0.8rem;
   padding: 0.8rem;
-  max-width: 1024;
-  text-align: justify;
-  border: 0.05rem solid #ffd700;
-  border-radius: 1rem;
 }
-.bibliografia-images {
+.principal-image {
   border: 0.2rem solid #ffd700;
-  margin: 0.8rem;
-  border-radius: 70rem;
+  margin: 0.9rem;
+  border-radius: 2rem;
   width: 17em;
 }
 .container {
+  text-align: justify;
+
   margin: 0.5rem;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
-.tittle2 {
+
+.container-tittle {
   font-family: var(--fonte-principal);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-}
-.container-subtittles {
-  font-family: var(--fonte-principal);
-  font-size: 1.6rem;
-  margin: 0.5rem 0 0.1rem 0;
 }
 .container-text {
   font-family: var(--fonte-secundaria);
   font-size: 1.1rem;
   margin: 0.2rem;
   padding: 0.2rem;
+}
+.citacao {
+  display: flex;
+  justify-content: right;
+  font-family: var(--fonte-secundaria);
+}
+
+#principais-musicas {
+  border: 0.1rem solid #ffd700;
+  border-radius: 1rem;
+  margin: 2rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1.6rem;
+  background: linear-gradient(#35803f, #a63f4e);
+  color: var(--text-color);
+}
+.principais-musicas-tittle {
+  font-family: var(--fonte-principal);
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+.principais-musicas-list {
+  font-family: var(--fonte-secundaria);
+  font-size: 1.2rem;
+  margin-left: 0.8rem;
+  list-style: circle;
+  margin-bottom: 1rem;
+}
+.principais-musicas-links {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.principais-musicas-links:hover {
+  color: #ffd700;
+  transition: 0.4s;
+  font-size: 1.1rem;
+}
+.fontes {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.fontes:hover {
+  color: #ffd700;
 }
 .rodape {
   display: flex;
@@ -93,25 +132,40 @@ body {
   font-size: 1.1rem;
   align-items: center;
 }
-
 @media (min-width: 280px) and (max-width: 680px) {
   .container {
-    max-width: 95%;
+    max-width: 100vw;
   }
-  .bibliografia-images {
+  .principal-image {
     justify-content: center;
+    margin-left: 5rem;
   }
 }
 @media (min-width: 681px) and (max-width: 1024px) {
-  .bibliografia-images {
+  .container {
+    max-width: 95vw;
+  }
+
+  .principal-image {
     float: right;
   }
 }
-@media (min-width: 1025px) and (max-width: 2024px) {
-  body {
-    max-width: 90vw;
+@media (min-width: 1024px) and (max-width: 2024px) {
+  main {
+    display: inline-flex;
   }
-  .bibliografia-images {
+  .principal {
+    max-width: 60%;
+  }
+  #principais-musicas {
+    align-items: flex-end;
+    max-height: 60vh;
+    max-width: 40%;
+  }
+  body {
+    max-width: 100vw;
+  }
+  .principal-image {
     float: right;
   }
 }
