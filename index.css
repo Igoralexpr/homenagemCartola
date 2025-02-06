@@ -90,7 +90,7 @@ body {
   border-radius: 1rem;
   margin: 2rem 1rem 1rem 1rem;
   padding: 1rem 1rem 1rem 1.6rem;
-  background: linear-gradient(#35803f, #a63f4e);
+  background: linear-gradient(#225a2a, #88323e);
   color: var(--text-color);
 }
 .principais-musicas-tittle {
@@ -138,7 +138,6 @@ body {
   }
   .principal-image {
     justify-content: center;
-    margin-left: 5rem;
   }
 }
 @media (min-width: 681px) and (max-width: 1024px) {
@@ -158,9 +157,8 @@ body {
     max-width: 60%;
   }
   #principais-musicas {
-    align-items: flex-end;
-    max-height: 60vh;
     max-width: 40%;
+    max-height: 60vh;
   }
   body {
     max-width: 100vw;
